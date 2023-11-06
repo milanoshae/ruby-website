@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruby Products</title>
-    <link rel="stylesheet" href="products-styles.css" />
+    <title>Ruby Home</title>
+    <link rel="stylesheet" href="signup2-styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -27,48 +27,46 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
+            <a href="./index.html" class="navbar__links">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">Tech</a>
+            <a href="./tech.html" class="navbar__links">Tech</a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links">Products</a>
+            <a href="./products.html" class="navbar__links">Products</a>
           </li>
-          <li class="navbar__btn"><a href="/" class="button">Sign Up</a></li>
+          <li class="navbar__btn">
+            <a href="./signup.html" class="button">Sign Up</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1>The best VR headsets for 2023 featuring</h1>
-          <h2>RUBY</h2>
-          <p>Virtual reality is here, and there's never been a better time to snag a VR headset.</p>
-          <button class="main__btn1"><a href="#">Request a Demo</a></button>
-          <button class="main__btn2"><a href="#">Start for free</a></button>
+    <div class="wrapper">
+      <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user"></i>
         </div>
-        <div class="main__img--container">
-          <img id="main__img" src="./images/undraw_virtual_reality_re_yg8i.svg" />
+        <div class="input-box">
+          <input type="password" placeholder="Password" required />
+          <i class="bx bxs-lock-alt"></i>
         </div>
-      </div>
-    </div>
 
-    <!-- Services Section -->
-    <div class="services">
-      <h1>So what makes a good VR headset?</h1>
-      <div class="services__container">
-        <div class="services__card">
-          <h2>Meta Quest 3</h2>
-          <p>The long-awaited follow-up to the Quest 2 is an upgrade in every respect: It’s more comfortable to wear, it has higher quality screens and it has full-color mixed reality cameras.</p>
+        <div class="remember-forget">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#">Forgot password?</a>
         </div>
-        <div class="services__card">
-          <h2>PlayStation VR2</h2>
-          <p>The PS VR2 is one of the best headset we’ve tested. It offers dual 2K OLED HDR screens, effectively giving you 4K quality. It’s one of the most comfortable headsets around.</p>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="go-back" class="btn-back">
+          <a href="./index.html">Back to Home</a>
+        </button>
+        <div class="register-link">
+          <p>Don't have an account? <a href="#">Register</a></p>
         </div>
-      </div>
+      </form>
     </div>
 
     <!-- Footer Section -->
